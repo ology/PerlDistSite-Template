@@ -9,6 +9,6 @@ theme:
   dark: "#457b9d"
   primary: "#457b9d"
   secondary: "#31587a"
-root_url: https://<% USER %>.github.io/<% LC_DIST %>-tutorial/
+root_url: https://<% USER %>.github.io/<% LC_DIST %>-<%% LC_MANUAL >/
 homepage:
   banner: ''
