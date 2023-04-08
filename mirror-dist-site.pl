@@ -18,7 +18,7 @@ use File::Slurper qw(read_text write_text);
 my %opt = (
     user      => 'ology',
     source    => '.',
-    dest      => '.',
+    dest      => './docs',
     dist      => 'Foo-Bar',
     abstract  => 'Frobnicate Universes',
     copyright => (localtime)[5] + 1900,
