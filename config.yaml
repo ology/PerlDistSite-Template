@@ -1,0 +1,14 @@
+name: <% DIST %>
+abstract: <% TEXT_ABSTRACT %>
+abstract_html: <% HTML_ABSTRACT %>
+github: https://github.com/ology/<% DIST %>
+issues: https://github.com/ology/<% DIST %>/issues
+copyright: "Copyright © <% COPYRIGHT %> Gene Boggs. All rights reserved."
+theme:
+  light: "#e5e5e5"
+  dark: "#457b9d"
+  primary: "#457b9d"
+  secondary: "#31587a"
+root_url: https://ology.github.io/<% LC_DIST %>-tutorial/
+homepage:
+  banner: ''
