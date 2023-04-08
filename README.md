@@ -1,2 +1,2 @@
 # PerlDistSite-Template
-Template for a PerlDistSite Instance
+Template for a Web::PerlDistSite Instance
