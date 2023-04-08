@@ -26,7 +26,7 @@ my %replacement;
 $replacement{DIST} = $opt{dist};
 $replacement{LC_DIST} = lc $replacement{DIST};
 ($replacement{MODULE} = $replacement{DIST}) =~ s/-/::/g;
-$replacement{ABSTRACT} = $opt{abstract};
+$replacement{ABSTRACT} = $opt{abstract} || 'ABSTRACT';
 $replacement{HTML_ABSTRACT} = $replacement{ABSTRACT};
 
 $opt{source} =~ s/\/$//;
