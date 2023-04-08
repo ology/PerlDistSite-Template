@@ -44,15 +44,16 @@ GetOptions(\%opt,
 die "Invalid source directory.\n" unless $opt{source} && -e $opt{source};
 die "Distribution not given.\n" unless $opt{dist};
 
-my %replacement;
-$replacement{WHO}           = $opt{who};
-$replacement{USER}          = $opt{user};
-$replacement{COPYRIGHT}     = $opt{copyright};
-$replacement{MANUAL}        = $opt{manual};
+my %replacement = (
+    WHO       => $opt{who},
+    USER      => $opt{user},
+    COPYRIGHT => $opt{copyright},
+    MANUAL    => $opt{manual},
+    DIST      => $opt{dist},
+    ABSTRACT  => $opt{abstract} || 'ABSTRACT',
+);
 $replacement{LC_MANUAL}     = lc $replacement{MANUAL},
-$replacement{DIST}          = $opt{dist};
 $replacement{LC_DIST}       = lc $replacement{DIST};
-$replacement{ABSTRACT}      = $opt{abstract} || 'ABSTRACT';
 $replacement{HTML_ABSTRACT} = $replacement{ABSTRACT};
 ($replacement{MODULE} = $replacement{DIST}) =~ s/-/::/g;
 
