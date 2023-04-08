@@ -1,7 +1,9 @@
 #!/usr/bin/env perl
 
 # Process Web::PerlDistSite files with replacements
-# Examples:
+# Example:
+# git clone https://github.com/ology/PerlDistSite-Template.git
+# cd PerlDistSite-Template
 # perl mirror-dist-site.pl --source . --dest ~/tmp --dist Blah-Blah
 
 use strict;
