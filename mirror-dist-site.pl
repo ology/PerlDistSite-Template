@@ -5,6 +5,8 @@
 # git clone https://github.com/ology/PerlDistSite-Template.git
 # cd PerlDistSite-Template
 # perl mirror-dist-site.pl --who You --user you --dest ~/repos/Blah-Blah/docs --dist Blah-Blah --manual Manual --abstract "Do All The Things"
+# cd ~/repos/Blah-Blah/docs
+# make clean ; make all
 
 use strict;
 use warnings;
