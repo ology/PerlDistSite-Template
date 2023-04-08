@@ -1,6 +1,6 @@
 name: <% DIST %>
-abstract: <% ABSTRACT %>
-abstract_html: <% HTML_ABSTRACT %>
+abstract: '<% ABSTRACT %>'
+abstract_html: '<% HTML_ABSTRACT %>'
 github: https://github.com/<% USER %>/<% DIST %>
 issues: https://github.com/<% USER %>/<% DIST %>/issues
 copyright: "Copyright © <% COPYRIGHT %> <% WHO %>. All rights reserved."
