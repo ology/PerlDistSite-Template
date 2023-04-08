@@ -9,6 +9,7 @@ use File::Path qw(make_path);
 use File::Slurper qw(read_text write_text);
 
 my %opt = (
+    user     => 'ology',
     source   => '.',
     dest     => '.',
     dist     => 'Foo-Bar',

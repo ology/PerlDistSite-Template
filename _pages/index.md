@@ -2,7 +2,7 @@
   <h2 class="display-1">Module Description</h2>
   <p class="lead"><% MODULE %> is a Perl module that implements ...</p>
   <p class="pt-5">
-    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/ology/<% DIST %>" title="GitHub Issues">
+    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/<% USER %>/<% DIST %>" title="GitHub Issues">
   </p>
 </div>
 
