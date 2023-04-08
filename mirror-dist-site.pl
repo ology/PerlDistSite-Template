@@ -16,6 +16,7 @@ use File::Path qw(make_path);
 use File::Slurper qw(read_text write_text);
 
 my %opt = (
+    who       => 'Gene Boggs',
     user      => 'ology',
     source    => '.',
     dest      => './docs',
@@ -25,6 +26,7 @@ my %opt = (
     manual    => 'Tutorial',
 );
 GetOptions(\%opt,
+    'who=s',
     'user=s',
     'source=s',
     'dest=s',
@@ -38,6 +40,7 @@ die "Source directory not given.\n" unless $opt{source};
 die "Distribution not given.\n" unless $opt{dist};
 
 my %replacement;
+$replacement{WHO}           = $opt{who};
 $replacement{USER}          = $opt{user};
 $replacement{COPYRIGHT}     = $opt{copyright};
 $replacement{MANUAL}        = $opt{manual};

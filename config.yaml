@@ -3,7 +3,7 @@ abstract: <% ABSTRACT %>
 abstract_html: <% HTML_ABSTRACT %>
 github: https://github.com/<% USER %>/<% DIST %>
 issues: https://github.com/<% USER %>/<% DIST %>/issues
-copyright: "Copyright © <% COPYRIGHT %> Gene Boggs. All rights reserved."
+copyright: "Copyright © <% COPYRIGHT %> <% WHO %>. All rights reserved."
 theme:
   light: "#e5e5e5"
   dark: "#457b9d"
