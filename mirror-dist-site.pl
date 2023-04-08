@@ -9,8 +9,10 @@ use File::Path qw(make_path);
 use File::Slurper qw(read_text write_text);
 
 my %opt = (
-    source => '.',
-    dest   => '.',
+    source   => '.',
+    dest     => '.',
+    dist     => 'Foo-Bar',
+    abstract => 'Frobnicate Universes',
 );
 GetOptions(\%opt,
     'source=s',
