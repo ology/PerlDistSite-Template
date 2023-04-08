@@ -65,7 +65,7 @@ while (my $line = readline(DATA)) {
         $to = $to ? "$to/$name" : $name;
     }
 
-    my $path = $opt{dest};
+    my $path = "$opt{dest}/$replacement{LC_DIST}";
     $path .= "/$to" if $to;
 
     if (-d $source) {
@@ -73,6 +73,7 @@ while (my $line = readline(DATA)) {
         print "Copied $source to $path\n";
     }
     elsif (-f $source) {
+        make_path($path) unless -e $path;
         my $dest = "$path/$name";
         write_text($dest, $content);
         print "Wrote $source to $dest\n";
