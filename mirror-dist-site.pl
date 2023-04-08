@@ -40,9 +40,9 @@ $replacement{USER}          = $opt{user};
 $replacement{COPYRIGHT}     = $opt{copyright};
 $replacement{DIST}          = $opt{dist};
 $replacement{LC_DIST}       = lc $replacement{DIST};
-($replacement{MODULE}       = $replacement{DIST}) =~ s/-/::/g;
 $replacement{ABSTRACT}      = $opt{abstract} || 'ABSTRACT';
 $replacement{HTML_ABSTRACT} = $replacement{ABSTRACT};
+($replacement{MODULE} = $replacement{DIST}) =~ s/-/::/g;
 
 $opt{source} =~ s/\/$//;
 $opt{dest} =~ s/\/$//;
