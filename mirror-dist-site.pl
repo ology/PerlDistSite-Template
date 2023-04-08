@@ -4,7 +4,6 @@
 # Example:
 # git clone https://github.com/ology/PerlDistSite-Template.git
 # cd PerlDistSite-Template
-# perl mirror-dist-site.pl --user you --dest ~/tmp --dist Blah-Blah
 # perl mirror-dist-site.pl --user you --dest ~/tmp --dist Blah-Blah --manual Manual --abstract "Do All The Things"
 
 use strict;
