@@ -4,15 +4,15 @@
 - name: docs
   title: <% MANUAL %>
   children:
-    - name: tutorial/quickstart
+    - name: <% LC_MANUAL %>/quickstart
       title: Quick-start
       icon: '<i class="fa-solid fa-bicycle"></i>'
       pod: <% MODULE %>::<% MANUAL %>::Quickstart
-    - name: tutorial/basics
+    - name: <% LC_MANUAL %>/basics
       title: Basics
       icon: '<i class="fa-solid fa-car-side"></i>'
       pod: <% MODULE %>::<% MANUAL %>::Basics
-    - name: tutorial/advanced
+    - name: <% LC_MANUAL %>/advanced
       title: Advanced
       icon: '<i class="fa-solid fa-jet-fighter"></i>'
       pod: <% MODULE %>::<% MANUAL %>::Advanced
