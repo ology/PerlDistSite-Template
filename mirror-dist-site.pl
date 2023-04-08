@@ -41,7 +41,7 @@ GetOptions(\%opt,
     'manual=s',
 ) or die 'Error parsing command options';
 
-die "Source directory not given.\n" unless $opt{source} && -e $opt{source};
+die "Invalid source directory.\n" unless $opt{source} && -e $opt{source};
 die "Distribution not given.\n" unless $opt{dist};
 
 my %replacement;
