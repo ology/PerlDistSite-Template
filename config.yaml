@@ -1,5 +1,5 @@
 name: <% DIST %>
-abstract: <% TEXT_ABSTRACT %>
+abstract: <% ABSTRACT %>
 abstract_html: <% HTML_ABSTRACT %>
 github: https://github.com/ology/<% DIST %>
 issues: https://github.com/ology/<% DIST %>/issues
