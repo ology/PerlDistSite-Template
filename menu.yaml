@@ -7,15 +7,15 @@
     - name: tutorial/quickstart
       title: Quick-start
       icon: '<i class="fa-solid fa-bicycle"></i>'
-      pod: <% MODULE %>::Tutorial::Quickstart
+      pod: <% MODULE %>::<% MANUAL %>::Quickstart
     - name: tutorial/basics
       title: Basics
       icon: '<i class="fa-solid fa-car-side"></i>'
-      pod: <% MODULE %>::Tutorial::Basics
+      pod: <% MODULE %>::<% MANUAL %>::Basics
     - name: tutorial/advanced
       title: Advanced
       icon: '<i class="fa-solid fa-jet-fighter"></i>'
-      pod: <% MODULE %>::Tutorial::Advanced
+      pod: <% MODULE %>::<% MANUAL %>::Advanced
 - name: metacpan
   title: On CPAN
   icon: '<i class="fa-solid fa-circle-dot"></i>'

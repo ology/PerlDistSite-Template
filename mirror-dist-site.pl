@@ -22,6 +22,7 @@ my %opt = (
     dist      => 'Foo-Bar',
     abstract  => 'Frobnicate Universes',
     copyright => (localtime)[5] + 1900,
+    manual    => 'Tutorial',
 );
 GetOptions(\%opt,
     'user=s',
@@ -38,6 +39,7 @@ die "Distribution not given.\n" unless $opt{dist};
 my %replacement;
 $replacement{USER}          = $opt{user};
 $replacement{COPYRIGHT}     = $opt{copyright};
+$replacement{MANUAL}        = $opt{manual};
 $replacement{DIST}          = $opt{dist};
 $replacement{LC_DIST}       = lc $replacement{DIST};
 $replacement{ABSTRACT}      = $opt{abstract} || 'ABSTRACT';
