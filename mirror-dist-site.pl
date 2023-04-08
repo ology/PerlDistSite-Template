@@ -55,8 +55,6 @@ while (my $line = readline(DATA)) {
 
     my ($file, $to) = split /\s+/, $line;
 
-    my $name = basename($file);
-
     my $source = "$opt{source}/$file";
 
     unless (-e $source) {
@@ -78,6 +76,8 @@ while (my $line = readline(DATA)) {
 
     $to ||= '';
     $to =~ s/\/$//;
+
+    my $name = basename($file);
 
     if (-d $source) {
         $to = $to ? "$to/$name" : $name;
