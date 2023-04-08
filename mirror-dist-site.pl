@@ -31,6 +31,7 @@ GetOptions(\%opt,
     'dist=s',
     'abstract=s',
     'copyright=s',
+    'manual=s',
 ) or die 'Error parsing command options';
 
 die "Source directory not given.\n" unless $opt{source};
