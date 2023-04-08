@@ -41,6 +41,7 @@ my %replacement;
 $replacement{USER}          = $opt{user};
 $replacement{COPYRIGHT}     = $opt{copyright};
 $replacement{MANUAL}        = $opt{manual};
+$replacement{LC_MANUAL}     = lc $replacement{MANUAL},
 $replacement{DIST}          = $opt{dist};
 $replacement{LC_DIST}       = lc $replacement{DIST};
 $replacement{ABSTRACT}      = $opt{abstract} || 'ABSTRACT';
