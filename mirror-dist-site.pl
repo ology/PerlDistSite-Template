@@ -9,11 +9,12 @@ use File::Path qw(make_path);
 use File::Slurper qw(read_text write_text);
 
 my %opt = (
-    user     => 'ology',
-    source   => '.',
-    dest     => '.',
-    dist     => 'Foo-Bar',
-    abstract => 'Frobnicate Universes',
+    user      => 'ology',
+    source    => '.',
+    dest      => '.',
+    dist      => 'Foo-Bar',
+    abstract  => 'Frobnicate Universes',
+    copyright => (localtime)[5] + 1900,
 );
 GetOptions(\%opt,
     'user=s',
@@ -21,6 +22,7 @@ GetOptions(\%opt,
     'dest=s',
     'dist=s',
     'abstract=s',
+    'copyright=s',
 ) or die 'Error parsing command options';
 
 die "Source directory not given.\n" unless $opt{source};
@@ -28,6 +30,7 @@ die "Distribution not given.\n" unless $opt{dist};
 
 my %replacement;
 $replacement{USER} = $opt{user};
+$replacement{COPYRIGHT} = $opt{copyright};
 $replacement{DIST} = $opt{dist};
 $replacement{LC_DIST} = lc $replacement{DIST};
 ($replacement{MODULE} = $replacement{DIST}) =~ s/-/::/g;
