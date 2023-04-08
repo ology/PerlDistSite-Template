@@ -1,4 +1,9 @@
 #!/usr/bin/env perl
+
+# Process Web::PerlDistSite files with replacements
+# Examples:
+# perl mirror-dist-site.pl --source . --dest ~/tmp --dist Blah-Blah
+
 use strict;
 use warnings;
 
