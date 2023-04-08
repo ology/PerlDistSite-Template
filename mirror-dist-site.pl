@@ -8,10 +8,6 @@ use File::Copy::Recursive qw(fcopy dircopy);
 use File::Path qw(make_path);
 use File::Slurper qw(read_text write_text);
 
-my %replacement = (
-    REPLACE_ME => 'Abc123',
-);
-
 my %opt = (
     source => '.',
     dest   => '.',
@@ -19,9 +15,20 @@ my %opt = (
 GetOptions(\%opt,
     'source=s',
     'dest=s',
+    'dist=s',
+    'abstract=s',
 ) or die 'Error parsing command options';
 
 die "Source directory not given.\n" unless $opt{source};
+die "Distribution not given.\n" unless $opt{dist};
+
+my %replacement;
+
+$replacement{DIST} = $opt{dist};
+$replacement{LC_DIST} = lc $replacement{DIST};
+($replacement{MODULE} = $replacement{DIST}) =~ s/-/::/g;
+$replacement{ABSTRACT} = $opt{abstract};
+$replacement{HTML_ABSTRACT} = $replacement{ABSTRACT};
 
 $opt{source} =~ s/\/$//;
 $opt{dest} =~ s/\/$//;
