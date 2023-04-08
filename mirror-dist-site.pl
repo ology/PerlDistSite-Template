@@ -84,7 +84,7 @@ while (my $line = readline(DATA)) {
         $to = $to ? "$to/$name" : $name;
     }
 
-    my $path = "$opt{dest}/$replacement{DIST}";
+    my $path = $opt{dest};
     $path .= "/$to" if $to;
 
     if (-d $source) {
