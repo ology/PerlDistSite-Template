@@ -108,4 +108,3 @@ menu.yaml
 package.json
 _pages/index.md
 _pages/installation.md
-README.md
