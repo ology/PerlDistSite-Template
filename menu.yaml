@@ -2,7 +2,7 @@
   title: Installation
   source: _pages/installation.md
 - name: docs
-  title: Tutorial
+  title: <% MANUAL %>
   children:
     - name: tutorial/quickstart
       title: Quick-start
