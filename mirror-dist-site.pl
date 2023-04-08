@@ -16,6 +16,7 @@ my %opt = (
     abstract => 'Frobnicate Universes',
 );
 GetOptions(\%opt,
+    'user=s',
     'source=s',
     'dest=s',
     'dist=s',
