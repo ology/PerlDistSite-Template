@@ -36,12 +36,12 @@ die "Source directory not given.\n" unless $opt{source};
 die "Distribution not given.\n" unless $opt{dist};
 
 my %replacement;
-$replacement{USER} = $opt{user};
-$replacement{COPYRIGHT} = $opt{copyright};
-$replacement{DIST} = $opt{dist};
-$replacement{LC_DIST} = lc $replacement{DIST};
-($replacement{MODULE} = $replacement{DIST}) =~ s/-/::/g;
-$replacement{ABSTRACT} = $opt{abstract} || 'ABSTRACT';
+$replacement{USER}          = $opt{user};
+$replacement{COPYRIGHT}     = $opt{copyright};
+$replacement{DIST}          = $opt{dist};
+$replacement{LC_DIST}       = lc $replacement{DIST};
+($replacement{MODULE}       = $replacement{DIST}) =~ s/-/::/g;
+$replacement{ABSTRACT}      = $opt{abstract} || 'ABSTRACT';
 $replacement{HTML_ABSTRACT} = $replacement{ABSTRACT};
 
 $opt{source} =~ s/\/$//;
