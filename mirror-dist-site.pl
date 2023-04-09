@@ -60,10 +60,8 @@ $replacement{HTML_ABSTRACT} = $replacement{ABSTRACT};
 $opt{source} =~ s/\/$//;
 $opt{dest} =~ s/\/$//;
 
-while (my $line = readline(DATA)) {
-    chomp $line;
-
-    my ($file, $to) = split /\s+/, $line;
+while (my $file = readline(DATA)) {
+    chomp $file;
 
     my $source = "$opt{source}/$file";
 
@@ -84,17 +82,13 @@ while (my $line = readline(DATA)) {
         }
     }
 
-    $to ||= '';
-    $to =~ s/\/$//;
-
     my $name = basename($file);
+    my $dir  = dirname($file);
 
-    if (-d $source) {
-        $to = $to ? "$to/$name" : $name;
-    }
+    $dir = '' if $dir eq '.';
 
     my $path = $opt{dest};
-    $path .= "/$to" if $to;
+    $path .= "/$dir" if $dir;
 
     if (-d $source) {
         dircopy($source, $path);
