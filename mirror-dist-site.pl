@@ -82,8 +82,8 @@ while (my $file = readline(DATA)) {
         }
     }
 
-    my $name = basename($file);
     my $dir  = dirname($file);
+    my $name = basename($file);
 
     $dir = '' if $dir eq '.';
 
