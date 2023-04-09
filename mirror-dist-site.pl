@@ -88,7 +88,8 @@ while (my $file = readline(DATA)) {
     $dir = '' if $dir eq '.';
 
     my $path = $opt{dest};
-    $path .= "/$dir" if $dir;
+    $path .= "/$dir"  if $dir;
+    $path .= "/$name" if -d $name;
 
     if (-d $source) {
         dircopy($source, $path);
