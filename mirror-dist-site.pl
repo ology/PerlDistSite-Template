@@ -58,7 +58,7 @@ $replacement{HTML_ABSTRACT} = $replacement{ABSTRACT};
 ($replacement{MODULE} = $replacement{DIST}) =~ s/-/::/g;
 
 $opt{source} =~ s/\/$//;
-$opt{dest} =~ s/\/$//;
+$opt{dest}   =~ s/\/$//;
 
 while (my $file = readline(DATA)) {
     chomp $file;
