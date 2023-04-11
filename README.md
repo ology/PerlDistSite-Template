@@ -4,7 +4,7 @@ Template for a Web::PerlDistSite Instance
     # in a "~/sandbox" directory of repos...
 
     # create and clone a github pages Blah-Blah tutorial repo
-    git clone https://github.com/ology/blah-blah-tutorial.git
+    git clone https://github.com/you/blah-blah-tutorial.git
 
     # grab this template
     git clone https://github.com/ology/PerlDistSite-Template.git
@@ -30,4 +30,4 @@ Template for a Web::PerlDistSite Instance
     # git add and commit the files
     git add * ; git commit -am 'Initial commit'
 
-And don't forget to exclude the site directory from future Blah-Blah CPAN uploads!
+(And don't forget to exclude the site directory from future Blah-Blah CPAN uploads!)
