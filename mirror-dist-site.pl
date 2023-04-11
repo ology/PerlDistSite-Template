@@ -105,7 +105,6 @@ while (my $file = readline(DATA)) {
 
 __END__
 clean-and-move.sh
-rm-dirs.sh
 config.yaml
 custom.scss
 images
