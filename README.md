@@ -4,7 +4,7 @@ Template for a Web::PerlDistSite Instance
     # in a "~/repos" directory of repos...
 
     # create and clone a github pages Blah-Blah tutorial repo
-    # under your existing user page repo
+    # that will live under your existing user page repo
     git clone https://github.com/you/blah-blah-tutorial.git
 
     # grab this template
