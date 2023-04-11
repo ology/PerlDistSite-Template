@@ -5,4 +5,4 @@ Template for a Web::PerlDistSite Instance
 
     cd PerlDistSite-Template
 
-    perl mirror-dist-site.pl --dest ~/tmp --dist Blah-Blah
+    perl mirror-dist-site.pl --dest ~/sandbox/Blah-Blah/site --dist Blah-Blah
