@@ -34,4 +34,5 @@ Template for a Web::PerlDistSite Instance
     # wait a few minutes and browse to the tutorial
     https://you.github.io/blah-blah-tutorial
 
-(And don't forget to exclude the site directory from future Blah-Blah CPAN uploads!)
+(And don't forget to exclude the site subdirectory from future
+Blah-Blah CPAN uploads!)
