@@ -1,7 +1,7 @@
 # PerlDistSite-Template
 Template for a Web::PerlDistSite Instance
 
-    # in a "~/sandbox" directory of repos...
+    # in a "~/repos" directory of repos...
 
     # create and clone a github pages Blah-Blah tutorial repo
     git clone https://github.com/you/blah-blah-tutorial.git
@@ -16,16 +16,16 @@ Template for a Web::PerlDistSite Instance
     cpanm --installdeps .
 
     # create a new perl-dist-site under your Blah-Blah repo
-    perl mirror-dist-site.pl --dest ~/sandbox/Blah-Blah/site --dist Blah-Blah
+    perl mirror-dist-site.pl --dest ~/repos/Blah-Blah/site --dist Blah-Blah
 
     # go to the perl-dist-site
-    cd ~/sandbox/Blah-Blah/site
+    cd ~/repos/Blah-Blah/site
 
     # create the Blah-Blah tutorial
     ./clean-and-move.sh
 
     # go to the new tutorial directory
-    cd ~/sandbox/blah-blah-tutorial
+    cd ~/repos/blah-blah-tutorial
 
     # git add and commit the files
     git add * ; git commit -am 'Initial commit'
