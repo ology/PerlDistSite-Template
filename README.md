@@ -22,6 +22,9 @@ Template for a Web::PerlDistSite Instance
     # go to the perl-dist-site
     cd ~/repos/Blah-Blah/site
 
+    # install Web::PerlDistSite
+    make install
+
     # create the Blah-Blah tutorial
     ./clean-and-move.sh
 
