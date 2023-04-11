@@ -30,4 +30,7 @@ Template for a Web::PerlDistSite Instance
     # git add and commit the files
     git add * ; git commit -am 'Initial commit'
 
+    # wait a few minutes and browse to the tutorial
+    https://you.github.io/blah-blah-tutorial
+
 (And don't forget to exclude the site directory from future Blah-Blah CPAN uploads!)
