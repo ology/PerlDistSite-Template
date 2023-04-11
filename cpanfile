@@ -3,3 +3,4 @@ requires 'File::Basename';
 requires 'File::Copy::Recursive';
 requires 'File::Path';
 requires 'File::Slurper';
+requires 'Web::PerlDistSite';
