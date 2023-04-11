@@ -21,3 +21,5 @@ Template for a Web::PerlDistSite Instance
 
     # create the Blah-Blah tutorial
     ./clean-and-move.sh
+
+* And don't forget to exclude the distribution/site directory from your CPAN uploads!
