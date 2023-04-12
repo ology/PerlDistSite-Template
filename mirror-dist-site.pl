@@ -93,13 +93,13 @@ while (my $file = readline(DATA)) {
 
     if (-d $source) {
         dircopy($source, $path);
-        print "Copied $source to $path\n";
+        print "Copied directory $source to $path\n";
     }
     elsif (-f $source) {
         make_path($path) unless -e $path;
         my $dest = "$path/$name";
         write_text($dest, $content);
-        print "Wrote $source to $dest\n";
+        print "Wrote file $source to $dest\n";
     }
 }
 
