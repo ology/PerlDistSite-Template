@@ -17,7 +17,7 @@ Template for a Web::PerlDistSite Instance
     cpanm --installdeps .
 
     # create a new perl-dist-site under your Blah-Blah repo
-    perl mirror-dist-site.pl --dest ~/repos/Blah-Blah/site --dist Blah-Blah
+    ./mirror-dist-site.pl --dest ~/repos/Blah-Blah/site --dist Blah-Blah
 
     # go to the perl-dist-site
     cd ~/repos/Blah-Blah/site
