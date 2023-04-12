@@ -24,3 +24,7 @@
   title: On GitHub
   icon: '<i class="fa-brands fa-github"></i>'
   target: '_blank'
+- name: personal
+  title: <% WHO %>
+  icon: '<i class="fa-solid fa-user-circle"></i>'
+  href: https://<% USER %>.github.io/
