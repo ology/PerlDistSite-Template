@@ -29,6 +29,7 @@ my %opt = (
     abstract  => 'Frobnicate Universes',
     copyright => (localtime)[5] + 1900,
     manual    => 'Tutorial',
+    dryrun    => 0,
 );
 GetOptions(\%opt,
     'who=s',
@@ -39,6 +40,7 @@ GetOptions(\%opt,
     'abstract=s',
     'copyright=s',
     'manual=s',
+    'dryrun',
 ) or die 'Error parsing command options';
 
 die "Invalid source directory.\n" unless $opt{source} && -e $opt{source};
@@ -92,13 +94,13 @@ while (my $file = readline(DATA)) {
     $path .= "/$name" if -d $name;
 
     if (-d $source) {
-        dircopy($source, $path);
+        dircopy($source, $path) unless $opt{dryrun};
         print "Copied directory $source to $path\n";
     }
     elsif (-f $source) {
-        make_path($path) unless -e $path;
+        make_path($path) unless $opt{dryrun} || -e $path;
         my $dest = "$path/$name";
-        write_text($dest, $content);
+        write_text($dest, $content) unless $opt{dryrun};
         print "Wrote file $source to $dest\n";
     }
 }
