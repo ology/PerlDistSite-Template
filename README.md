@@ -22,7 +22,7 @@ Template for a Web::PerlDistSite Instance
     # go to the perl-dist-site
     cd ~/repos/Blah-Blah/site
 
-    # install the Web::PerlDistSite bits
+    # install the Web::PerlDistSite and these template perl dependencies
     make install
 
     # create the Blah-Blah tutorial
