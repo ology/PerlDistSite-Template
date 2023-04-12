@@ -77,7 +77,7 @@ while (my $file = readline(DATA)) {
         for my $replace (keys %replacement) {
             if ($content =~ /<%\s*$replace\s*%>/) {
                 $content =~ s/<%\s*$replace\s*%>/$replacement{$replace}/g;
-                print "Replaced $replace in $source\n";
+                print "Replace $replace in $source\n";
             }
         }
     }
