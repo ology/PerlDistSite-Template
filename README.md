@@ -13,7 +13,7 @@ Template for a Web::PerlDistSite Instance
     # go to the cloned checkout
     cd PerlDistSite-Template
 
-    # install the program dependencies
+    # install these template dependencies
     cpanm --installdeps .
 
     # create a new perl-dist-site under your Blah-Blah repo
@@ -22,7 +22,7 @@ Template for a Web::PerlDistSite Instance
     # go to the perl-dist-site
     cd ~/repos/Blah-Blah/site
 
-    # install the Web::PerlDistSite and these template perl dependencies
+    # install the Web::PerlDistSite
     make install
 
     # create the Blah-Blah tutorial
